@@ -32,9 +32,9 @@ class AddEditTypeBox extends Component {
     return (
       <div className="App-AddEditTypeBox box">
         <form onSubmit={this.handleSubmit}>
-          <h2><textarea type="text" name="type" rows={2} maxLength="30" onChange={this.updateType} value={this.state.type} placeholder={this.state.isTypeEmptyWarning ? "Enter type of shopping list" : ""}></textarea></h2>
+          <h2><textarea className="no-border" type="text" name="type" rows={3} maxLength="30" onChange={this.updateType} value={this.state.type} placeholder={this.state.isTypeEmptyWarning ? "Enter type of shopping list" : ""}></textarea></h2>
           <button className="add whole" type="submit" value="submit">+ Add</button>
-          <span className="ex">ex: Grocery, Thirft Store, Birthday Party ... - <span className="bold">max 30 characters</span></span>
+          <span className="ex">ex: Grocery, Thirft Store, Birthday Party ... - <span className="bold">30 characters max</span></span>
         </form>  
       </div>
     );

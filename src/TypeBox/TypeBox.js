@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CheckableItem from '../CheckableItem/CheckableItem';
+import AddEditItem from '../AddEditItem/AddEditItem';
 
 class TypeBox extends Component {
   render() {
@@ -9,6 +10,7 @@ class TypeBox extends Component {
         { this.props.list['items'].map((item, i) =>
           <CheckableItem key={i} item={item} />
         )}
+        <AddEditItem type={this.props.type} addTypeItem={this.props.addTypeItem} />
       </div>
     );
   }

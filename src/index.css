@@ -25,19 +25,22 @@ h1 {
 }
 
 h2, h2 textarea {
-  color: #522c56;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
   font-size: 1em;
   font-weight: bold;
   margin: 0 0 .5em 0;
 }
 
 h2 textarea {
-  border: none;
-  resize: none;
+  border-radius: .2em;
   width: 100%;
+}
+
+textarea {
+  color: #522c56;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  resize: none;
 }
 
 #dashboard {
@@ -82,10 +85,23 @@ h2 textarea {
   font-size: .8em;
 }
 
+.fourth-3 { width: 75%; }
+.fourth-1 { width: 20%; }
+
+.left { float: left; }
+
+.no-border { border: none; }
+
+.overflow-hid { overflow: hidden; }
+
 .pad-hor {
   padding-left: .5em;
   padding-right: .5em;
 }
+
+.right { float: right; }
+
+.h-70px { height: 70px; }
 
 .whole {
   display: block;
