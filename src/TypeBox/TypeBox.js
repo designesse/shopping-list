@@ -6,7 +6,7 @@ class TypeBox extends Component {
   render() {
     return (
       <div className="App-TypeBox box">
-        <h2>{ this.props.list['type'] }</h2>
+        <h2>{ this.props.list['type'] }<input className="right" type="submit" value="x" onClick={() => this.props.displayOverlay(true, this.props.list['type']) } /></h2>
         { this.props.list['items'].map((item, i) =>
           <CheckableItem key={i} item={item} />
         )}
