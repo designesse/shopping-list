@@ -1,0 +1,25 @@
+.App-DisplayOverlay {
+  left: 0;
+  padding: 10%;
+  position: absolute;
+  top: 0;
+  width: 80%;
+}
+
+.button-text {
+  background-color: #eab591;
+  border-radius: .3em;
+  font-size: .8em;
+  margin-top: 1em;
+  padding: .5em 1em;
+}
+
+.message-box {
+  background: white;
+  border: 1px solid #eab591;
+  border-radius: .3em;
+  color: #522c56;
+  margin: 0 auto;
+  padding: 1.5em;
+  width: 400px;
+}
